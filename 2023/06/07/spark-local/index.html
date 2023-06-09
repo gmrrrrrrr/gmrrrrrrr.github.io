@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"","path":"2023/06/07/Spark部署文档/"},{"title":"Spark Local环境部署","path":"2023/06/07/spark-local/"},{"title":"Hello World","path":"2023/06/06/hello-world/"},{"title":"博客","path":"2023/06/07/创建博客并上传github/"}]`)
+  const posts = JSON.parse(`[{"title":"","path":"2023/06/07/Spark部署文档/"},{"title":"hive部署","path":"2023/06/09/hive/"},{"title":"Spark Local环境部署","path":"2023/06/07/spark-local/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -327,7 +327,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>4 篇</span>
+        <span>3 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -335,7 +335,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>478天</span>
+        <span>479天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -432,7 +432,7 @@ pre:active {
 <p><img src="/../images/%E5%9B%BE%E7%89%8722.png" alt="22"><br>我们可以在4040端口使用浏览器打开它</p>
 <p><img src="/../images/%E5%9B%BE%E7%89%8723.png" alt="23"><br>如果4040被占用找不到可以向后查找4041……<br>在虚拟机中jps一下</p>
 <p><img src="/../images/%E5%9B%BE%E7%89%8724.png" alt="24"><br>可以看到local的进程，既是master也是worker<br>bin&#x2F;spark-shell - 了解<br>同样是一个解释器环境, 和<code>bin/pyspark</code>不同的是, 这个解释器环境 运行的不是python代码, 而是scala程序代码<br>bin&#x2F;spark-submit (PI)<br>作用: 提交指定的Spark代码到Spark环境中运行<br>使用方法:</p>
-<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><p>bin&#x2F;spark-submit [可选的一些选项] jar包或者python代码的路径 [代码的参数]</p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p>bin&#x2F;spark-submit [可选的一些选项] jar包或者python代码的路径 [代码的参数]</p>
 
     </article>
     
@@ -454,7 +454,7 @@ pre:active {
     <div class="article-catelogue--wrapper">
       <div class="catelogue catelogue-1">
         <h3>目录</h3>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Spark-Local%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2"><span class="toc-number">1.</span> <span class="toc-text">Spark Local环境部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">语法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Spark-Local%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2"><span class="toc-number">1.</span> <span class="toc-text">Spark Local环境部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">语法</span></a></li></ol></li></ol>
       </div>
       
         <div class="catelogue catelogue-2">
@@ -464,11 +464,6 @@ pre:active {
               <a href="/2023/06/07/Spark部署文档/"></a>
             </p>
            
-          
-            <p>
-              <span>下一篇</span>
-              <a href="/2023/06/07/创建博客并上传github/">博客</a>
-            </p>
           
         </div>
       
